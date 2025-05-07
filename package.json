@@ -1,6 +1,6 @@
 {
   "name": "dvoice-tts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js & TypeScript client for DVoice TTS API",
   "main": "dist/tts.js",
   "types": "dist/tts.d.ts",
