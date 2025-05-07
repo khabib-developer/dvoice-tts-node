@@ -1,5 +1,10 @@
 import axios from "axios";
 import WebSocket from "ws";
+import https from "https";
+
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false, // WARNING: disables SSL verification
+});
 
 export type TTSFormat = "wav" | "mp3" | "ogg" | "aac" | "flac";
 
@@ -28,6 +33,7 @@ export class TTS {
       headers: {
         token: `${this.token}`,
       },
+      httpsAgent,
     });
 
     return Buffer.from(response.data);
