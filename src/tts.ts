@@ -26,7 +26,7 @@ export class TTS {
     const response = await axios.post(this.httpURL, data, {
       responseType: "arraybuffer",
       headers: {
-        Authorization: `Bearer ${this.token}`,
+        token: `${this.token}`,
       },
     });
 
@@ -48,7 +48,7 @@ export class TTS {
 
     const ws = new WebSocket(url.toString(), {
       headers: {
-        Authorization: `Bearer ${this.token}`,
+        token: `${this.token}`,
       },
     });
 
