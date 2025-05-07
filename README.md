@@ -46,7 +46,7 @@ async function generateAudio() {
   try {
     const audio = await tts.single({
       model: "default",
-      text: "Hello, world!",
+      text: "Salom!",
       format: "mp3", // Options: 'mp3', 'wav', 'ogg', 'aac', 'flac'
     });
     fs.writeFileSync("output.mp3", audio);
@@ -67,7 +67,7 @@ Use the `stream()` method to receive audio chunks in real-time:
 tts.stream(
   {
     model: "default",
-    text: "Streaming speech in real-time!",
+    text: "Davomiy nutqni real vaqtda translatsiya qilish!",
     format: "mp3", // Options: 'mp3', 'wav', 'ogg', 'aac', 'flac'
   },
   (err, chunk, close) => {
