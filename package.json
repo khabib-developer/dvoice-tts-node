@@ -6,9 +6,9 @@
   "types": "dist/tts.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/dvoice-tts.git"
+    "url": "https://github.com/khabib-developer/dvoice-tts-node"
   },
-  "author": "YOUR_NAME",
+  "author": "Khabib Sharopov",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
