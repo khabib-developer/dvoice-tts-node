@@ -35,6 +35,10 @@ const tts = new TTS({ token: "YOUR_API_TOKEN" });
 
 Replace `'YOUR_API_TOKEN'` with your actual API token from the DVoice TTS service.
 
+### Obtaining an API Token
+
+To use the DVoice TTS API, you need a valid API token. Visit the main website at [dvoice.uz](https://dvoice.uz) and navigate to [profile.dvoice.uz](https://profile.dvoice.uz) to create an account or log in. Once logged in, you can generate or retrieve your API token from your profile dashboard.
+
 ### 🔊 Generating a Single Audio File
 
 Use the `single()` method to generate an audio file from text:
